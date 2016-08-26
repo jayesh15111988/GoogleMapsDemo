@@ -1,0 +1,24 @@
+<head>
+    <!DOCTYPE html>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Movie locations Marker - Supported by Google Maps</title>
+    <!-- Main CSS file for design guideline details -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+    <!-- Adding promise file to avoid problems in IE and Safari Browsers in which promise is not supported -->
+    <!-- Source : https://github.com/then/promise -->
+    <script src="https://www.promisejs.org/polyfills/promise-4.0.0.js"></script>
+    <script src="js/APIRequestMovies/SFMoviesProjectConstants.js"></script>
+    <script src="js/APIRequestMovies/SFMoviePromiseProvider.js"></script>
+
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeRdyRv5GthW1kmrB2HB_pLLq6JafJgxs"></script>
+    <script src="js/GoogleMaps/GoogleMapsFetch.js"></script>
+    <script src="js/APIRequestMovies/SFMovieMapPlotterOnView.js"></script>
+</head>
+<body>
+<div id="map-canvas"></div>
+</body>
+</html>

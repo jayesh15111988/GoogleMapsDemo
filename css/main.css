@@ -1,0 +1,148 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map-canvas {
+    height: 50%;
+    width: 50%;
+}
+
+#input-movie-name {
+    width: 200px;
+}
+
+#search-bar-div {
+    margin-left: 80px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+input[type="text"] {
+    float: left;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light';
+    font-size: 20px;
+    color: #005284;
+}
+
+.general-button {
+    float: left;
+    width: 100px;
+    height: 30px;
+}
+
+.autocomplete-results {
+    background-color: rgba(192,192,192,0.5);
+    overflow-y: auto;
+    display: none;
+}
+
+.selected {
+    background-color: rgba(170,160,220,0.7);
+}
+
+.movie-content-data {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.movie-location,.movie-content {
+    color: rgba(255,0,0,1);
+}
+
+.movie-lead-actor,.movie-fun-facts,.movie-release-year {
+    color: rgba(255,170,0,1);
+}
+
+.movie-production-company,.movie-director,.movie-writer {
+    color: rgba(10,160,155,1);
+}
+
+.movie-other-actor {
+    color: rgba(127,0,255,1);
+}
+
+#internet-connection-status-dialogue {
+    display: none;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(163,203,241,1.0);
+    position: absolute;
+    z-index: 100;
+    border: 2px solid #E9ECA2;
+    border-radius: 35px;
+}
+
+.connection-error-message {
+    color: rgba(2,130,130,1.0);
+    margin: 20px 10px 10px 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.main-error-message {
+    font-weight: bolder;
+    font-size: 22px;
+    color: #617fff;
+    margin-top: 20px;
+}
+
+
+/* Single-direction drop shadow */
+
+hr {
+    height: 14px;
+    border: 0;
+}
+
+/* Design of a horizontal rule on main movies results page. There are four categories and
+Each one has separate color */
+
+.first {
+    box-shadow: inset 0 14px 12px -12px rgba(255,0,0,1);
+}
+
+.second {
+    box-shadow: inset 0 14px 12px -12px rgba(255,170,0,1);
+}
+
+.third {
+    box-shadow: inset 0 14px 12px -12px rgba(10,160,155,1);
+;
+}
+
+.fourth {
+    box-shadow: inset 0 14px 12px -12px rgba(127,0,255,1);
+;
+}
+
+#no-result-error {
+    position: absolute;
+    width: 500px;
+    height: 44px;
+    z-index: 1;
+    top: -44px;
+    left: 55%;
+    font-weight: bold;
+    margin: 0 0 0 -250px;
+    background: rgba(255,0,0,0.6);
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+}
+
+img {
+    height: 24px;
+    width: 24px;
+    padding-right: 10px;
+}
+
+.extra-error-message {
+    height: 50px;
+    font-size: 14px;
+}
